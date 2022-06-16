@@ -135,7 +135,6 @@ spotify:e_${episode.spotifyUrl.replace('https://open.spotify.com/episode/', '')}
     schema:description        "${episode.description.replace(/[^\S ]+/g,'').replace(/"/g, "'")}" @de ;
     schema:duration           "${episode.duration}" ;
     schema:datePublished      "${episode.dataPublished}"^^xsd:date ;
-    schema:episodeNumber      ${episode.episodeNumber} ;
     schema:isPartOf           spotify:s_${podcast.spotifyUrl.replace('https://open.spotify.com/show/', '')} .
       `
     }).forEach(podcast => data += podcast)
@@ -160,14 +159,13 @@ spotify:e_${episode.spotifyUrl.replace('https://open.spotify.com/episode/', '')}
       image: feed?.image?.url ?? '',
       genre: feed?.itunes?.categories ?? [],
       webFeed: podcast.rss ?? '',
-      episodes: podcastEpisodes.map((item, index) => {
+      episodes: podcastEpisodes.map(item => {
         return {
           spotifyUrl: `https://open.spotify.com/episode/${podcast.spotifyId}` ?? '',
           name: item?.title ?? '',
           description: item?.contentSnippet ?? '',
           duration: item?.itunes?.duration?.includes(':') ? item?.itunes?.duration : new Date(item?.itunes?.duration * 1000)?.toISOString().substring(11, 19) ?? '00:00:00',
           dataPublished: item?.isoDate?.substring(0, 10) ?? '',
-          episodeNumber: feed.items.length - index ?? 0,
           audio: item?.enclosure.url ?? ''
         }
       }),
