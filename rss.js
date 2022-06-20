@@ -13,14 +13,17 @@ const podcasts = [
     rss: 'https://www.deutschlandfunknova.de/podcast/eine-stunde-history'
   },
   {
+    wikiDataId: 'Q110914241',
     spotifyId: '28xB1TuIMy3xIjng8diGWT',
     rss: 'https://mordaufex.podigee.io/feed/mp3'
   },
   {
+    wikiDataId: 'Q60697596',
     spotifyId: '6wPqbSlsvoi3Rgjjc2Sn4R',
     rss: 'https://mordlust-podcast.podigee.io/feed/mp3'
   },
   {
+    wikiDataId: 'Q85850769',
     spotifyId: '3jtLk2Zlutfjo91QZYXmlA',
     rss: 'https://baywatch-berlin.podigee.io/feed/mp3'
   },
@@ -43,10 +46,25 @@ let data = `
 
 
 ### Person ###
-wd:Q30113048 a schema:Person ;
-    schema:name               "Felix Lobrecht" ;
-    schema:alternateName      "Felix Manuel Lobrecht" ;
-    schema:url                wd:Q30113048 .
+pers:LeonieBartsch a schema:Person ;
+    schema:name               "Leonie Bartsch" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+
+pers:LinnSchütze a schema:Person ;
+    schema:name               "Linn Schütze" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+
+wd:Q1273716 a schema:Person ;
+    schema:name               "Kai Schwind" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q1273716 .
+
+wd:Q124660 a schema:Person ;
+    schema:name               "Andreas Fröhlich" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q124660 .
 
 wd:Q68462943 a schema:Person ;
     schema:name               "Tommi Schmitt" ;
@@ -101,6 +119,10 @@ orga:StudioBummens a schema:Organization ;
 wd:Q689141 a schema:Organization ;
     schema:name               "Spotify" ;
     schema:url                wd:Q689141 .
+    
+wd:Q1155601 a schema:Organization ;
+    schema:name               "Deutschlandfunk Nova" ;
+    schema:url                wd:Q1155601 .
 `
 
 const createTTLData = async (podcasts) => {
@@ -110,7 +132,7 @@ const createTTLData = async (podcasts) => {
 ### Podcast Series ###`
   podcasts.map(podcast => {
     return `
-spotify:s_${podcast.spotifyUrl.replace('https://open.spotify.com/show/', '')} a schema:PodcastSeries ;
+${podcast.wikiDataId !== '' ? `wd:${podcast.wikiDataId}` : `spotify:s_${podcast.spotifyUrl.replace('https://open.spotify.com/show/', '')}`} a schema:PodcastSeries ;
     schema:name               "${podcast.name}" @de ;
     schema:description        "${podcast.description.replace(/[^\S ]+/g,'')}" @de ;
     schema:creator            "${podcast.author}" ;
@@ -135,7 +157,7 @@ spotify:e_${episode.spotifyUrl.replace('https://open.spotify.com/episode/', '')}
     schema:description        "${episode.description.replace(/[^\S ]+/g,'').replace(/"/g, "'")}" @de ;
     schema:duration           "${episode.duration}" ;
     schema:datePublished      "${episode.dataPublished}"^^xsd:date ;
-    schema:isPartOf           spotify:s_${podcast.spotifyUrl.replace('https://open.spotify.com/show/', '')} .
+    schema:isPartOf           ${podcast.wikiDataId !== '' ? `wd:${podcast.wikiDataId}` : `spotify:s_${podcast.spotifyUrl.replace('https://open.spotify.com/show/', '')}`} .
       `
     }).forEach(podcast => data += podcast)
   })
@@ -148,7 +170,8 @@ spotify:e_${episode.spotifyUrl.replace('https://open.spotify.com/episode/', '')}
     const feed = await parser.parseURL(podcast.rss)
     const podcastEpisodes = totalPodcastEpisode === 0 ? feed?.items : feed?.items.slice(0, totalPodcastEpisode) ?? []
     return {
-      spotifyUrl: `https://open.spotify.com/show/${podcast.spotifyId}` ?? '',
+      spotifyUrl: `https://open.spotify.com/show/${podcast?.spotifyId}` ?? '',
+      wikiDataId: podcast?.wikiDataId ?? '',
       name: feed?.title ?? '',
       description: feed?.description ?? '',
       author: feed?.itunes?.author ?? '',
