@@ -173,7 +173,7 @@ spotify:e_${episode.spotifyUrl.replace('https://open.spotify.com/episode/', '')}
       spotifyUrl: `https://open.spotify.com/show/${podcast?.spotifyId}` ?? '',
       wikiDataId: podcast?.wikiDataId ?? '',
       name: feed?.title ?? '',
-      description: feed?.description ?? '',
+      description: feed?.description.replace(/<\/?[^>]+(>|$)/g, '') ?? '',
       author: feed?.itunes?.author ?? '',
       maintainer: feed?.generator ?? '',
       contributor: '',
