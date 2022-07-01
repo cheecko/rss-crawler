@@ -1,0 +1,388 @@
+
+@prefix schema:       <https://schema.org/> .
+@prefix rdf:          <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:         <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix wd:           <http://www.wikidata.org/entity/> .
+@prefix owl:          <http://www.w3.org/2002/07/owl#> .
+@prefix xsd:          <http://www.w3.org/2001/XMLSchema#> .
+@prefix spotify:      <https://bmake.th-brandenburg.de/spotify/> .
+@prefix pers:         <https://bmake.th-brandenburg.de/pers/> .
+@prefix orga:         <https://bmake.th-brandenburg.de/orga/> .
+
+
+### Person ###
+pers:LeonieBartsch a schema:Person ;
+    schema:name               "Leonie Bartsch" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+
+pers:LinnSchütze a schema:Person ;
+    schema:name               "Linn Schütze" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+
+wd:Q1273716 a schema:Person ;
+    schema:name               "Kai Schwind" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q1273716 .
+
+wd:Q124660 a schema:Person ;
+    schema:name               "Andreas Fröhlich" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q124660 .
+
+wd:Q68462943 a schema:Person ;
+    schema:name               "Tommi Schmitt" ;
+    schema:alternateName      "Thomas Schmitt" ;
+    schema:url                wd:Q68462943 .
+    
+pers:LisaSophieScheurell a schema:Person ;
+    schema:name               "Lisa-Sophie Scheurell" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+    
+pers:PaulinaKrasa a schema:Person ;
+    schema:name               "Paulina Krasa" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+    
+pers:LauraWohlers a schema:Person ;
+    schema:name               "Laura Wohlers" ;
+    schema:alternateName      "" ;
+    schema:url                "" .
+    
+wd:Q109360 a schema:Person ;
+    schema:name               "Klaas Heufer-Umlauf" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q109360 .
+    
+wd:Q50821909 a schema:Person ;
+    schema:name               "Jakob Lundt" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q50821909 .
+    
+wd:Q1292000 a schema:Person ;
+    schema:name               "Kida Ramadan" ;
+    schema:alternateName      "Kida Khodr Ramadan" ;
+    schema:url                wd:Q1292000 .
+    
+wd:Q70775 a schema:Person ;
+    schema:name               "Frederick Lau" ;
+    schema:alternateName      "" ;
+    schema:url                wd:Q70775 .
+    
+
+###Organization###
+wd:Q109943664 a schema:Organization ;
+    schema:name               "Spotify Studios" ;
+    schema:url                wd:Q109943664 .
+    
+orga:StudioBummens a schema:Organization ;
+    schema:name               "Studio Bummens" ;
+    schema:url                "" .
+    
+wd:Q689141 a schema:Organization ;
+    schema:name               "Spotify" ;
+    schema:url                wd:Q689141 .
+    
+wd:Q1155601 a schema:Organization ;
+    schema:name               "Deutschlandfunk Nova" ;
+    schema:url                wd:Q1155601 .
+
+orga:Podigee a schema:Organization ;
+    schema:name               "Podigee" ;
+    schema:url                "" .
+
+wd:Q21183704 a schema:Organization ;
+    schema:name               "Acast" ;
+    schema:url                wd:Q21183704 .
+    
+orga:Podlove a schema:Organization ;
+    schema:name               "Podlove" ;
+    schema:url                orga:Podlove .
+
+### Podcast Series ###
+spotify:s_5ZW8phuJoLC1go6GoHhY2x a schema:PodcastSeries ;
+    schema:name               "Haschimitenfürst – Der Bobcast" @de ;
+    schema:description        "<p><strong>Der offizielle und einzigartige Die drei ??? - Bobcast</strong></p><p>„Ah! Ich glaub, ich hab einen Haschimitenfürsten im Gehirn!“</p><p>Keiner von den&nbsp;drei ???<strong>&nbsp;</strong>wird<strong>&nbsp;</strong>so oft bewusstlos geschlagen und leidet anschließend unter Gedächtnisverlust wie der für Recherchen und Archiv zuständige Detektiv&nbsp;<strong>Bob Andrews</strong>.&nbsp;</p><p>Es stellt sich die Frage: Woran kann sich&nbsp;<strong>Sprecher Andreas Fröhlich&nbsp;</strong>nach über 200 Fällen überhaupt noch erinnern?</p><p>Das finden wir im Bobcast heraus. Gemeinsam mit&nbsp;Hörspielmacher und Kollege&nbsp;<strong>Kai Schwind&nbsp;</strong>„erinnert“ sich Andreas Fröhlich zu Hause in privater Atmosphäre - das starke Talk-Duo beleuchtet dabei den Die drei ??? Kosmos mit viel Humor und erzählt die Geschichten hinter den Geschichten.</p><p>&nbsp;Umfassend und&nbsp;in chronologischer Reihenfolge konzentrieren sich die Bobcast-Macher auf die Anfänge der Serie; immer mit O-Tönen und Musik aus den Hörspielen sowie einem Blick ins Original-Manuskript.&nbsp;<strong>&nbsp;</strong></p><p>Ein Podcast, äh – Bobcast für Fans der Hörspielserie UND Podcasthörer:innen, die Lust auf die alten ???-Fälle haben.</p><p>Die drei ??? – Macher, legendäre Sprecher:innen und prominente Gäste unterstützen Andreas Fröhlich und Kai Schwind bei ihrer Retrospektive – vorausgesetzt, Bob bobt nicht und hat keinen Haschimitenfürsten im Gehirn.</p><br /><hr><p style='color:grey; font-size:0.75em;'> See <a style='color:grey;' target='_blank' rel='noopener noreferrer' href='https://acast.com/privacy'>acast.com/privacy</a> for privacy and opt-out information.</p>" @de ;
+    schema:creator            wd:Q1273716, wd:Q124660 ;
+    schema:maintainer         wd:Q689141, wd:Q21183704 ;
+    schema:contributor        "" ;
+    schema:isFamilyFriendly   true ;
+    schema:inLanguage         "de" ;
+    schema:image              "https://assets.pippa.io/shows/620e32d769a9c90013ad9c13/1645456760386-ce14dc0309b47480cb0a738738a96a3d.jpeg" ;
+    schema:genre              "News" ;
+    schema:webFeed            "https://feeds.acast.com/public/shows/haschimitenfurst-der-bobcast" .
+    
+spotify:s_2pveTPyvS5Mg62S35WCztY a schema:PodcastSeries ;
+    schema:name               "Eine Stunde History - Deutschlandfunk Nova" @de ;
+    schema:description        "Karl der Große, die Nürnberger Prozesse, Boat People und Flüchtlinge: Was hat Gestern mit Heute zu tun? Wie Vergangenheit und Zukunft miteinander zusammenhängen, erfahrt ihr in Eine Stunde History. Neue Folgen jeden Freitag." @de ;
+    schema:creator            wd:Q1155601, orga:Podlove ;
+    schema:maintainer         wd:Q689141 ;
+    schema:contributor        "" ;
+    schema:isFamilyFriendly   false ;
+    schema:inLanguage         "de-DE" ;
+    schema:image              "https://static.deutschlandfunknova.de/cover/Dlfnova-iTunes/_transformationPodcastCover/iTunes_Eine-Stunde_History_DLFNova_1400x1400.jpg" ;
+    schema:genre              "Education" ;
+    schema:webFeed            "https://www.deutschlandfunknova.de/podcast/eine-stunde-history" .
+    
+wd:Q110914241 a schema:PodcastSeries ;
+    schema:name               "MORD AUF EX" @de ;
+    schema:description        "MORD AUF EX ist der True Crime Podcast, bei dem sich ein Glas Wein zu viel eingeschenkt wird. Dann wird los gegossiped: über Ted Bundys Mutterkomplex, Lieblingsprofiler John Douglas oder unser Liebesleben. Klingt alles ein bisschen absurd? Ist es auch. Wir reden über die großen Verbrechen dieser Welt. Über Serienmörder, die sich im Kleiderschrank verstecken und auf ihre Opfer warten oder Cold Cases, die wir dann versuchen zu lösen. Von Phänomenen wie das Stockholm-Syndrom, über Killer-Sekten, seelenlosen Mafiosi, bis hin zu historischen Fälle wie Jack the Ripper oder bewegende Schicksalen, wie das einer indischen Kämpferin. Cheers!Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/MordaufEx" @de ;
+    schema:creator            pers:LinnSchütze, pers:LeonieBartsch ;
+    schema:maintainer         wd:Q689141, orga:Podigee ;
+    schema:contributor        "" ;
+    schema:isFamilyFriendly   true ;
+    schema:inLanguage         "de" ;
+    schema:image              "https://images.podigee-cdn.net/0x,syt-S9LsjTjZ4-DEAKPdnz-OSqww5KWxlJYx4vQ1U0Kw=/https://cdn.podigee.com/uploads/u2838/70d9de16-ee94-431f-b2d7-d65ec6a29e61.jpg" ;
+    schema:genre              "True Crime", "History", "Education" ;
+    schema:webFeed            "https://mordaufex.podigee.io/feed/mp3" .
+    
+wd:Q60697596 a schema:PodcastSeries ;
+    schema:name               "Mordlust" @de ;
+    schema:description        "Im True Crime-Podcast “Mordlust - Verbrechen und ihre Hintergründe” sprechen die Journalistinnen Paulina Krasa und Laura Wohlers über wahre Kriminalfälle aus Deutschland. In jeder Folge widmen sich die Reporterinnen zwei Fällen zu einem spezifischen Thema und diskutieren strafrechtliche und psychologische Aspekte. Dabei gehen sie Fragen nach wie: Was sind die Schwierigkeiten bei einem Indizienprozess? Wie überredet man Unbeteiligte zu einem falschen Geständnis? Und wie hätte die Tat womöglich verhindert werden können? Mord aus Habgier, niedrigen Beweggründen oder Mordlust - für die meisten Verbrechen gibt es eine Erklärung und nach der suchen die beiden. Außerdem diskutieren die Freundinnen über beliebte True Crime-Formate, begleiten Gerichtsprozesse und führen Interviews mit Expert:innen. Bei “Mordlust” wird die Stimmung zwischendurch auch mal aufgelockert - das ist aber nicht despektierlich gemeint.Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/Mordlust" @de ;
+	schema:creator			  pers:PaulinaKrasa, pers:LauraWohlers ;
+    schema:maintainer         wd:Q689141, orga:Podigee ;
+    schema:contributor        "" ;
+    schema:isFamilyFriendly   true ;
+    schema:inLanguage         "de" ;
+    schema:image              "https://images.podigee-cdn.net/0x,sM8BoXsSY6yXNkodXJDnXt6dhNvLSM2j-LLZDIrCIBso=/https://cdn.podigee.com/uploads/u2838/b165ea3a-2aaa-439f-9e80-54b83cad80d6.jpg" ;
+    schema:genre              "True Crime", "Society & Culture" ;
+    schema:webFeed            "https://mordlust-podcast.podigee.io/feed/mp3" .
+    
+wd:Q85850769 a schema:PodcastSeries ;
+    schema:name               "Baywatch Berlin" @de ;
+    schema:description        "Das Beautiful Mind Klaas Heufer-Umlauf probiert in diesem Podcast nach über 10 Jahren weltfremden Jet Set Spaß Kontakt zur echten Welt aufzunehmen. Wie einst in der Weihnachtsgeschichte wird er dabei von seinen Freunden Thomas Schmitt und Jakob Lundt an die Hand genommen und langsam wieder mit den Themen des wahren Lebens in Kontakt gebracht. Tauchen Sie ein und seien Sie die Kugel im Flipperautomaten „Baywatch Berlin“!Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/BaywatchBerlin" @de ;
+	schema:creator			  wd:Q109360, wd:Q50821909, wd:Q68462943, orga:StudioBummens ;
+    schema:maintainer         wd:Q689141, orga:Podigee ;
+    schema:contributor        "" ;
+    schema:isFamilyFriendly   true ;
+    schema:inLanguage         "de" ;
+    schema:image              "https://images.podigee-cdn.net/0x,szlWzgXrPJ_xBfmjvv7r93PajLtl1HLz-LDhp6rG5lE0=/https://cdn.podigee.com/uploads/u13394/f634f598-d0c2-4206-9203-eb598cbea846.jpg" ;
+    schema:genre              "Comedy", "Society & Culture", "TV & Film" ;
+    schema:webFeed            "https://baywatch-berlin.podigee.io/feed/mp3" .
+    
+spotify:s_2TgGzjsd5o9280yF2qDaog a schema:PodcastSeries ;
+    schema:name               "Reich und Schön mit Kida Ramadan und Frederick Lau" @de ;
+    schema:description        "Welche Adresse hat der Erfolg? Wie komme ich an meinen Anteil vom Kuchen? Was wohnt für ein Talent in mir? Kida Ramadan und Frederick Lau stellen sich diese Fragen jeden Dienstag bei Reich + Schön. Als Duo - klar -  und manchmal auch mit famous Friend-Support. Ihre Stories und krassen Erfahrungen sind pures Gold und weil Freddy und Kida gut drauf sind, teilen sie all das mit der Audience am schönsten Tag der Woche, der ab jetzt Dienstag heißt. Und am Ende? Geht es weniger um die Filmwelt und vielmehr um die Frage, wie man dieses verrückte Ding namens Leben eigentlich meistert, wenn man ein klares Ziel vor Augen hat: GANZ OBEN! Denn Schön waren die Jungs schon immer, aber das Reich, dass mussten sich die beiden hart erarbeiten. Aber seid mal leise jetzt und hört euch rein das Ding!" @de ;
+	schema:creator			  wd:Q1292000, wd:Q70775, orga:StudioBummens ;
+    schema:maintainer         wd:Q689141 ;
+    schema:contributor        "" ;
+    schema:isFamilyFriendly   true ;
+    schema:inLanguage         "de" ;
+    schema:image              "https://images.podigee-cdn.net/0x,so4IiHjYSJcpJAGzHVAi-yc_GuhJQpx4lVPLRqF0f5ks=/https://cdn.podigee.com/uploads/u27710/10c5f362-527f-4404-9cdc-2197e4a3b11c.jpg" ;
+    schema:genre              "TV & Film", "Comedy", "TV & Film" ;
+    schema:webFeed            "https://reich-und-schoen.podigee.io/feed/mp3" .
+    
+
+### Podcast Episode ###
+spotify:e_2uc8jkxUC5EhfX9Dx8ucmi a schema:PodcastEpisode ;
+    schema:name               "Der Bobcast und die rätselhaften Bilder" @de ;
+    schema:description        "Andreas Fröhlich liebt seinen Bob-Auftritt in dieser Folge: der für Recherchen und Archiv zuständige Detektiv legt mit verstellter Stimme ein paar Holländer rein und springt todesmutig in schwarze Löcher. Kai Schwind liebt Gisela Trowes rauchigen Auftritt und gibt einen ersten Hinweis darauf, welchesDie drei ??? - Abenteuer seiner Meinung nach am besten ist. Onkel Titus und Skinny Norris tauchen zum ersten Mal im Hörspiel auf und André Marx zum zweiten Mal im Bobcast: der Die drei ??? – Autor verrät, welchen Rocky Beach - Schriftsteller er „unfassbar trocken und humorlos“ findet. Und wie reagiert Jens Wawrczeck, wenn sein Name falsch ausgesprochen wird, warum fährt Andreas falsch Fahrrad und wie können Sprecher:innen „richtig abnehmen“…? Diese Rätsel werden bei der Besprechung von „Die drei ??? und die rätselhaften Bilder“ auf jeden Fall gelöst.Gast in dieser Episode: André MarxMit HelloFresh jetztbis zu 90€ verteilt auf die ersten vier Boxen in DE / AT und bis zu 140 CHF verteilt auf die ersten vier Boxen in CH erhalten.Einfach den CodeHFBOBCASTverwenden.Dieses Angebot gilt ausschließlich für Neukunden.„Haschimitenfürst – Der Bobcast“ ist ein Podcast von EUROPA, a division of Sony Music Entertainment Germany GmbHIdee: Andreas Fröhlich/ Regie & Konzeption: Ralf Podszus/ Moderation: Kai Schwind und Andreas Fröhlich/ Titelmusik: Jan-Friedrich Conrad/ Redaktion: Jens Nimmerrichter/Produktion: Carina Schwarz/ Management & Koordination: Nina Schulze PellengahrRedaktion Sony: Maike Müller/ Covermotiv: Aiga Rasch (Illustrationen), Tom Presting (Gestaltung), Christian Hartman, Haakon Dueland (Fotos)/ Eine Produktion von Podever See acast.com/privacy for privacy and opt-out information." @de ;
+    schema:duration           "47:27" ;
+    schema:datePublished      "2022-06-05"^^xsd:date ;
+    schema:isPartOf           spotify:s_5ZW8phuJoLC1go6GoHhY2x .
+      
+spotify:e_6UD42ddiOWjqLxkU75spel a schema:PodcastEpisode ;
+    schema:name               "Der Bobcast und der grüne Geist " @de ;
+    schema:description        "Der Bobcast und der grüne GeistBei diesem gespenstischen Spaß wühlen Andreas Fröhlich und Kai Schwind wieder in den Original-Manuskripten und decken dort Umbesetzungen und auch kleine Storyfehler auf. Verschiedene Vertonungs-Fauxpas geistern durch die Folge: massive Panzerschränke klingen nach leichtem Plastik, kleine Taschenlampen hören sich beim Herunterfallen gigantisch an und im Galopp wird auf den Pferden falsch geatmet. Sprecher Torsten Sense bringt im Studio alle zum Lachen und lässt dadurch den gutaufgelegten Oliver Rohrbeck als Justus in einer Szene herzhaft losprusten, in einer anderen Szene ist Jens Wawrczeck nicht in der Lage zu pfeifen und Kult-Sprecher Horst Frank versteht überhaupt nichts mehr. Und wie kann man eigentlich ein Mikrofon kaputtspucken…?! Inmitten des ganzen Unsinns bleibt Heikedine Körting ruhig und lässt diese Kult-Folge laufen …„Haschimitenfürst – Der Bobcast“ ist ein Podcast von EUROPA, a division of Sony Music Entertainment Germany GmbHIdee: Andreas Fröhlich/ Regie & Konzeption: Ralf Podszus/ Moderation: Kai Schwind und Andreas Fröhlich/ Titelmusik: Jan-Friedrich Conrad/ Redaktion: Jens Nimmerrichter/Produktion: Carina Schwarz/ Management & Koordination: Nina Schulze PellengahrRedaktion Sony: Maike Müller/ Covermotiv: Aiga Rasch (Illustrationen), Tom Presting (Gestaltung), Christian Hartman, Haakon Dueland (Fotos)/ Eine Produktion von Podever See acast.com/privacy for privacy and opt-out information." @de ;
+    schema:duration           "42:37" ;
+    schema:datePublished      "2022-05-22"^^xsd:date ;
+    schema:isPartOf           spotify:s_5ZW8phuJoLC1go6GoHhY2x .
+      
+spotify:e_5V4lt4MuJWsjH34to4R5Oz a schema:PodcastEpisode ;
+    schema:name               "Der Bobcast und der unheimliche Drache" @de ;
+    schema:description        "Der Bobcast und der unheimliche Drache„Du bist wie der Wind, der den Klang der Geigen und den Duft der Rosen weit mit sich trägt...“Andreas Fröhlich und Kai Schwind wundern sich bei ihrer Hörspiel-Besprechung mit „Dr. No“ - Effekt über hustende Fabeltiere und entdecken in dem Originalmanuskript von 'Die drei ??? und der unheimliche Drache“, dass ausuferndes Justus Fat Shaming verhindert wurde.Die drei Jungs sind bei ihrem siebten Einsatz als ???-Sprecher endgültig ein eingespieltes Team mit authentischer Spielfreude – und lassen sich nicht ablenken!Weder von Wolfgang Kubachs eigenwilliger Betonung noch von der schlechten Laune von Franz-Josef Steffens.Bobcast-Gast Jens Wawrczeck berichtet von seinem beruflichen Pessimismus, von seiner Leidenschaft für Filme von Alfred Hitchcock und hätte als Pippin um ein Haar Mittelerde umgekrempelt. Und warum trinken Sprecher:innen eigentlich vor ihrem Einsatz am Mikro Ananas-Saft…?Gast in dieser Podcast-Folge: Jens Wawrczeck„Haschimitenfürst – Der Bobcast“ ist ein Podcast von EUROPA, a division of Sony Music Entertainment Germany GmbHIdee: Andreas Fröhlich/ Regie & Konzeption: Ralf Podszus/ Moderation: Kai Schwind und Andreas Fröhlich/ Titelmusik: Jan-Friedrich Conrad/ Redaktion: Jens Nimmerrichter/Produktion: Carina Schwarz/ Management & Koordination: Nina Schulze PellengahrRedaktion Sony: Maike Müller/ Covermotiv: Aiga Rasch (Illustrationen), Tom Presting (Gestaltung), Christian Hartman, Haakon Dueland (Fotos)/ Eine Produktion von Podever See acast.com/privacy for privacy and opt-out information." @de ;
+    schema:duration           "43:28" ;
+    schema:datePublished      "2022-05-08"^^xsd:date ;
+    schema:isPartOf           spotify:s_5ZW8phuJoLC1go6GoHhY2x .
+      
+spotify:e_2XpDkPsZdOFWu76dcekTyY a schema:PodcastEpisode ;
+    schema:name               "Der Bobcast und der sprechende Totenkopf" @de ;
+    schema:description        "Der Bobcast und der sprechende TotenkopfEin Fehlerverhindert den ersten Einsatz von Onkel Titus und stellt beinahe die ganze Welt der Die drei ??? - Fans auf den Kopf.Kai Schwind riskiert bei der Besprechung von'Die drei ??? und der sprechende Totenkopf' Kopf und Kragen, denn hier gibt es für ihn eine absolute Traumastelle.Kult-Sprecher Gerlach Fiedler hat den Kopf wieder voller Flausen und überlistet mit einer Improvisation die Regie bei der Aufnahme. Die weiteren Sprecher:innen treffen mit ihrer Performance den Nagel auf den Kopf: Joachim Wolf ist die perfekte Frau, Marianne Kehlau beeindruckt mit endloser Eleganz und Richard Lauffen ist echt creepy. FettesBrot müssen Hals über Kopf in der Villa Körting berühmte Möbelstücke schleppen und Nina Hagen verdreht “mit Schweinekram' Andreas Fröhlich den Kopf.Köpfchen braucht man für dieBesprechung dieser gruseligen Folge also allemal!In dieser Podcast-Episode zu Gast: Heikedine Körting„Haschimitenfürst – Der Bobcast“ ist ein Podcast von EUROPA, a division of Sony Music Entertainment Germany GmbHIdee: Andreas Fröhlich/ Regie & Konzeption: Ralf Podszus/ Moderation: Kai Schwind und Andreas Fröhlich/ Titelmusik: Jan-Friedrich Conrad/ Redaktion: Jens Nimmerrichter/Produktion: Carina Schwarz/ Management & Koordination: Nina Schulze PellengahrRedaktion Sony: Maike Müller/ Covermotiv: Aiga Rasch (Illustrationen), Tom Presting (Gestaltung), Christian Hartman, Haakon Dueland (Fotos)/ Eine Produktion von Podever See acast.com/privacy for privacy and opt-out information." @de ;
+    schema:duration           "35:19" ;
+    schema:datePublished      "2022-04-24"^^xsd:date ;
+    schema:isPartOf           spotify:s_5ZW8phuJoLC1go6GoHhY2x .
+      
+spotify:e_6tUVkEVyPr1250XHv6Ew36 a schema:PodcastEpisode ;
+    schema:name               "Der Bobcast und der Fluch des Rubins" @de ;
+    schema:description        "Der Bobcast und der Fluch des RubinsEs herrscht Verwirrung bei der Besprechung der Die drei ??? Kult-Folge: was um alles in der Welt ist „sülzieren“? Warum machen die „Fünf Freunde“ nicht mit? Und wieso hilft der Zwerg nicht…?! Beiden Aufnahmen fürDie drei ??? und der Fluch des Rubins“ist Jens Wawrczeck in eine Sprecherin verliebt, in weiteren Rollen brillieren Joachim Wolff, Reinhilt Schneider und Gottfried Kramer, der als Mister Rhandur einen Mord begeht (oder doch nicht?). Buchautor André Marx berichtet von der Entwicklung seiner Rubin-Fortsetzung „Feuriges Auge“ und verrät dabei auch, warum ihn die Schwarzbärte nerven. Heikedine Körting hat ihren Sprecher:innen vor 40 Jahren 150 Tannenbäume geschenkt - im Bobcast klären wir, wo noch alle Nadeln dran sind. Und Andreas Fröhlich outet sich im Gespräch mit Kai Schwind: er latscht zu gern über fränkische Felder! Aber warum?Gäste in dieser Podcast-Folge: Heikedine Körting und André Marx„Haschimitenfürst – Der Bobcast“ ist ein Podcast von EUROPA, a division of Sony Music Entertainment Germany GmbHIdee: Andreas Fröhlich/ Regie & Konzeption: Ralf Podszus/ Moderation: Kai Schwind und Andreas Fröhlich/ Titelmusik: Jan-Friedrich Conrad/ Redaktion: Jens Nimmerrichter/Produktion: Carina Schwarz/ Management & Koordination: Nina Schulze PellengahrRedaktion Sony: Maike Müller/ Covermotiv: Aiga Rasch (Illustrationen), Tom Presting (Gestaltung), Christian Hartman, Haakon Dueland (Fotos)/ Eine Produktion von Podever See acast.com/privacy for privacy and opt-out information." @de ;
+    schema:duration           "49:09" ;
+    schema:datePublished      "2022-04-10"^^xsd:date ;
+    schema:isPartOf           spotify:s_5ZW8phuJoLC1go6GoHhY2x .
+      
+spotify:e_45FvlVPrt3392xLkOT7uN5 a schema:PodcastEpisode ;
+    schema:name               "USA 1972 - Der Watergate-Skandal" @de ;
+    schema:description        "Es ist einer der folgenschwersten Tage der jüngeren amerikanischen Geschichte, als am 17. Juni 1972 fünf Männer in das Wahlkampf-Hauptquartier der Demokratischen Partei im Watergate-Komplex am Potomac-River in Washington einbrechen. Sie sollen die Telefone der Wahlkampfzentrale der Demokraten anzapfen und deren Büros verwanzen. Aber sie werden von einem Wachmann überrascht und anschließend festgenommen. Als Anführer wird James McCord ausgemacht, der zuvor jahrelang für den US-Geheimdienst CIA gearbeitet hat und anschließend Sicherheitschef des 'Komitees für die Wiederwahl des Präsidenten' gewesen ist.**********Ihr hört in dieser 'Eine Stunde History':00:09:53 - Historiker und Professor Manfred Berg00:21:32 - Historiker, Politikwissenschaftler und Amerikanist Bernd Greiner00:32:48 - Journalist Hans Leyendecker**********Den Artikel zum Stück findet ihr hier.**********Ihr könnt uns auch auf diesen Kanälen folgen:Instagram und YouTube." @de ;
+    schema:duration           "44:19" ;
+    schema:datePublished      "2022-06-10"^^xsd:date ;
+    schema:isPartOf           spotify:s_2pveTPyvS5Mg62S35WCztY .
+      
+spotify:e_7MtrTDbP47Eujn4JVh6yIv a schema:PodcastEpisode ;
+    schema:name               "Transnistrien - Konflikte mit Russland" @de ;
+    schema:description        "Im Juni 1992 erschüttern schwere Kämpfe zwischen regulären Truppen der Republik Moldau und pro-russischen Kämpfern der Region Transnistrien den kleinen Staat, der zwischen Rumänien und der Ukraine aus der Verfallsmasse der Sowjetunion kurz zuvor entstanden ist. Das Gebiet der Separatisten, die einen Anschluss an Russland befürworten, liegt östlich des Djnestr, einem Fluss, der auf rumänisch Nistru heißt und Namensgeber Transnistriens ist. Der Konflikt ist vielschichtig.**********Ihr hört in dieser 'Eine Stunde History':11:24:00 - Die Leiterin der Auslandsbüros Rumänien und Republik Moldau der Konrad Adenauer Stiftung, Katja Christina Plate, blickt zurück auf den Konflikt Anfang der 1990er Jahre 16:55:00 - Autor Kilian Graf hat sich wissenschaftlich mit den Konflikten in Transnistrien und ihren Nutznießern beschäftigt25:02:00 - Die Journalistin Andrea Diener hat Transnistrien bereist und schildert ihre Eindrücke34:32:00 - Die ARD-Korrespondentin in Moskau, Christiana Nagel, schildert die Lage in Transnistrien**********Mehr zum Thema bei Deutschlandfunk Nova:Transnistrien: Der ungelöste KonfliktMachtpolitik: Wie weit geht Putin auf der Krim**********Den Artikel zum Stück findet ihr hier.**********Ihr könnt uns auch auf diesen Kanälen folgen:Instagram und YouTube." @de ;
+    schema:duration           "46:30" ;
+    schema:datePublished      "2022-06-03"^^xsd:date ;
+    schema:isPartOf           spotify:s_2pveTPyvS5Mg62S35WCztY .
+      
+spotify:e_1oyWP36ybbPsdDh5vGKx2u a schema:PodcastEpisode ;
+    schema:name               "DDR Geschichte - Die Gründung der Wismut AG" @de ;
+    schema:description        "Am 27. Mai 1947 erlässt die Sowjetische Militäradministration in Deutschland einen Befehl, durch den der gesamte sächsische Bergbaubetrieb von der UdSSR übernommen wird. Wenige Tage später wird die Wismut AG gegründet. Wismut ist ein chemisches Element und dient der Sowjetunion als Tarnbezeichnung für eine Firma, die nicht mit Wismut handelt, sondern Uranabbau betreibt.**********Ihr hört in dieser 'Eine Stunde History':00:10:01 - Axel Hiller über die Bedeutung die Wismut AG für die Region im Erzgebirge00:18:10 - Juliane Schütterle über die Uranförderung in der DDR00:24:06 - Oliver Titzeman über verschwundene Dörfer**********Mehr zum Thema bei Deutschlandfunk Nova:Deutsche Einheit: Treuhandanstalt und Umbau der DDR-VolkswirtschaftNachwendekind Johannes Nichelmann: Wir brauchen mehr Raum für persönliche DDR-GeschichtenDDR: Kirche, Kiez und Kalter Krieg**********Den Artikel zum Stück findet ihr hier.**********Ihr könnt uns auch auf diesen Kanälen folgen:Instagram und YouTube." @de ;
+    schema:duration           "39:28" ;
+    schema:datePublished      "2022-05-27"^^xsd:date ;
+    schema:isPartOf           spotify:s_2pveTPyvS5Mg62S35WCztY .
+      
+spotify:e_5PeI5ezXlKItoUPJvvm9LO a schema:PodcastEpisode ;
+    schema:name               "Mafia - Der Mord an Richter Giovanni Falcone" @de ;
+    schema:description        "Als der ehemalige Untersuchungsrichter Giovanni Falcone am 23. Mai 1992 mit seiner Frau Francesca Morvillo, Richterin am Jugendgericht, vom Flughafen in Palermo in Richtung Wochenendhaus fährt, schlägt die Mafia zu. **********Ihr hört in dieser 'Eine Stunde History':04:17 - Veronika von Borries schildert den Tag des Mordanschlags auf Giovanni Falcone.09:34 - Stefan Troendle erinnert an Giovanni Falcone und die Reaktionen auf den Mord am 23. Mai 199220:46 - Petra Reski schildert, wie stark die Mafia Einfluss auf Politik und Wirtschaft nicht nur in Italien genommen hat31:40 - Laura Garavini beschreibt den Kampf des italienischen Staates gegen die Mafia**********Den Artikel zum Stück findet ihr hier.**********Ihr könnt uns auch auf diesen Kanälen folgen:Instagram und YouTube." @de ;
+    schema:duration           "42:57" ;
+    schema:datePublished      "2022-05-20"^^xsd:date ;
+    schema:isPartOf           spotify:s_2pveTPyvS5Mg62S35WCztY .
+      
+spotify:e_45D6XN3nO0l5KeSMji7xSh a schema:PodcastEpisode ;
+    schema:name               "Kolonialismus - The British Empire" @de ;
+    schema:description        "1922 ist das britische Weltreich so groß wie nie. Aber wie wurde es so riesig? Der Beginn liegt wohl in Streitigkeiten zwischen England und Spanien im 16. Jahrhundert.**********Ihr hört in dieser 'Eine Stunde History':05:18 - Deutschlandfunk Nova-Reporterin Wiebke Lehnhoff berichtet über die Zeit, als das 'British Empire' seine größte Ausdehnung erreicht hat.11:53 - Der Marburger Historiker Benedikt Stuchtey erläutert die Entwicklung des „British Empire“ im 19. Jahrhundert.20:57 - Der Kölner Historiker Peter Alter ist Experte für die Geschichte des Hauses Windsor und schildert deren Verhältnis zum 'British Empire'.29:44 - Der Journalist und England-Experte Thomas Kielinger beleuchtet die aktuelle britische Politik in Zeiten des Brexits und sucht nach Spuren der Ideologie.**********Den Artikel zum Stück findet ihr hier.**********Ihr könnt uns auch auf diesen Kanälen folgen:Instagram und YouTube." @de ;
+    schema:duration           "38:23" ;
+    schema:datePublished      "2022-05-13"^^xsd:date ;
+    schema:isPartOf           spotify:s_2pveTPyvS5Mg62S35WCztY .
+      
+spotify:e_6S06AKfUYqYNbBZ2DCQ3Cn a schema:PodcastEpisode ;
+    schema:name               "#126 Die Galápagos-Affäre: Mord im Paradies (mit Geschichten aus der Geschichte)" @de ;
+    schema:description        "Einfach mal alles liegen lassen...  die Regeln, den Stress, die Großstadt, die Zivilisation und sich eine neue Welt erschaffen. Geht das? Gemeinsam mit Richard und Daniel vom Podcast 'Geschichten aus der Geschichte' sprechen wir diese Woche über den mysteriösen Fall der Galapagos Affäre. Im November 1934 beschließt der Berliner Zahnarzt Friedrich Ritter mit seiner Freundin Dore Strauch auf die einsame Insel Floreana auszuwandern. Floreana ist eine unbewohnte Insel der pazfifischen Galapogos Inseln. Doch das Paradies täuscht und entpuppt sich schnell als Albtraum. Das Wasser reicht nicht, der Anbau der Pflanzen ist schwerer als gedacht und den beiden fehlen viele wichtige Alltagsgegenstände. Dazu kommt: Sie bleiben nicht die einzigen Bewohner dort. Ein paar Jahre später reist eine Kölner Familie an und dann auch noch eine Baronin mit ihren drei Liebhabern. Die Situation eskaliert und am Ende sind drei der Inselbewohner tot. Was ist passiert? Wir versuchen das Rätsel für euch zu lösen!Wir sind die nächsten zwei Wochen auf Live Tour in Deutschland unterwegs und machen deshalb eine kleine Podcast Pause. Ab dem 4 Juli sind wir wieder zurück! Folgt uns aber in dieser Zeit gerne auf Instagram: @mordaufexpodcastUnsere Hauptquellen für die Folge: - Drama auf Floreana: Geheimnis von Galapagos von Nicolas Montemolinos- Postlagernd Floreana: Eine moderne Robinsonade auf den Galápagos-Inseln von Margret WittmerDu möchtest mehr über unsere Werbepartner erfahren? [**Hier findest du alle Infos & Rabatte!**](https://linktr.ee/MordaufEx)Du möchtest mehr über unsere Werbepartner erfahren?  Hier findest du alle Infos & Rabatte: https://linktr.ee/MordaufEx" @de ;
+    schema:duration           "01:27:30" ;
+    schema:datePublished      "2022-06-12"^^xsd:date ;
+    schema:isPartOf           wd:Q110914241 .
+      
+spotify:e_3JkGExjcCnDG8k1omb2Zmj a schema:PodcastEpisode ;
+    schema:name               "#125 Son of Sam: New Yorks schlimmster Serienmörder" @de ;
+    schema:description        "In den 70er Jahren befindet sich ganz New York in Panik. Immer wieder bringt ein unbekannter Täter junge Menschen um. Er schleicht sich an ihre Autos heran, schießt mit einem 44. Kaliber Revolver und verschwindet. Die Polizei und die Medien rätseln: Wer ist der Serienmörder und was ist sein Motiv? Und dann meldet sich auf einmal der Killer höchstpersönlich. In verschiedenen Briefen erklärt er seine Taten, droht, dass er wieder töten wird und benutzt rätselhafte Symbole und Wörter. Und er stellt sich vor als „Son of Sam“. Was steckt hinter diesem Namen? Linn und Leo nehmen euch heute mit auf die Suche nach einem der schlimmsten Serienmörder New Yorks. Dabei stoßen sie auf satanistische Kulte, auf John Douglas, auf Höllenhunde und sogar auf Charles Manson. Am Ende steht die große Frage: Hat uns der Son of Sam alle an der Nase herum geführt? Packt eure Notizblöcker aus, liebe Exis, wir widmen uns diese Woche wieder einem klassischen Serienmörder. Cheers!Du möchtest mehr über unsere Werbepartner erfahren?  Hier findest du alle Infos & Rabatte: https://linktr.ee/MordaufEx" @de ;
+    schema:duration           "01:22:18" ;
+    schema:datePublished      "2022-06-05"^^xsd:date ;
+    schema:isPartOf           wd:Q110914241 .
+      
+spotify:e_4gITqfkbYtenXTo69Kzks7 a schema:PodcastEpisode ;
+    schema:name               "#124 Amber Heard: Warum wir ihr glauben sollten" @de ;
+    schema:description        "LLetzte Woche haben wir über Johnny Depps Seite gesprochen und über seine wichtigsten Beweismittel und Zeugenaussagen. Diese Woche wollen wir uns aber natürlich noch die andere Seite angucken: Amber Heards Geschichte. Wir erzählen von ihrer Kindheit, wie sie Johnny kennenlernte und wie romantisch das alles war. Doch ihre Liebesgeschichte wird schnell zu etwas Düsterem. Amber berichtet von Kontrolle, Toxischer Männlichkeit, verbaler und physischer Gewalt, Drogenmissbrauch und Alkoholsucht innerhalb ihrer Ehe. Und wenn es wirklich wahr sein sollte, was sie sagt, erlebt sie gerade das wohl schlimmste, was einem Menschen nach solchen Erfahrungen passieren kann: Ihr wird nicht geglaubt. Deswegen wollen wir uns in dieser Folge mit den wichtigsten Beweismitteln aus dem anderen Lager beschäftigen. Wer sagt für sie aus vor Gericht? Was hat sie erlebt? Kann man ihr glauben? Und warum läuft da online gerade was schief?Für mehr Infos schaut gerne vorbei: @mordaufexpodcast auf Instagram, tiktok oder facebook! Dort versorgen wir euch mit Zusatzinfos, Fotos, Videos und Kommentaren. Achtung: Diese Folge wurde vor dem aktuellen Urteil im Fall Depp vs. Heard aufgenommen. Ein Update folgt sobald die Jury dies getroffen hat.Du möchtest mehr über unsere Werbepartner erfahren?  Hier findest du alle Infos & Rabatte: https://linktr.ee/MordaufEx" @de ;
+    schema:duration           "01:34:29" ;
+    schema:datePublished      "2022-05-29"^^xsd:date ;
+    schema:isPartOf           wd:Q110914241 .
+      
+spotify:e_5SZbEWvZw8l9feJVdrtlGe a schema:PodcastEpisode ;
+    schema:name               "#123 Johnny Depp vs. Amber Heard: Urteil bereits gefällt?" @de ;
+    schema:description        "Die ganze Welt schaut auf den Verleumdungsprozess Johnny Depp VS Amber Heard in Fairfax, Virginia - und die ganze Welt ist gleichermaßen verwirrt. Wenn bisher nämlich eine Sache klar ist, dann, dass nicht viel klar ist. Die Geschichte ist überwältigend, chaotisch und kompliziert. Wir haben uns durch den Dschungel an Artikeln und Fake News gekämpft, haben Gerichtsdokumente, Prozess-Mitschnitte, YouTube Videos, Tiktok Reels angeschaut, um den Fall und seine Hintergründe zu verstehen. Amber Heard sagt, sie wurde von Johnny Depp sexuell, physisch als er auch verbal missbraucht. Johnny Depp hingegen sagt, er sei das Opfer und Amber der aggressive Part. Doch was ist wirklich passiert? Was hat es mit #justiceforjohnnydepp auf sich? Was ist das #poopgate? Was haben Elon Musk oder Kate Moss mit diesem Fall zu tun? Warum rasten hunderttausend Fans auf Tiktok gerade aus? Und  vor allem die wichtigsten Fragen: Wem zur Hölle soll man glauben und wer von beiden lügt? Genau damit beschäftigen wir uns diese und nächste Woche.Du möchtest mehr über unsere Werbepartner erfahren?  Hier findest du alle Infos & Rabatte: https://linktr.ee/MordaufEx" @de ;
+    schema:duration           "01:41:30" ;
+    schema:datePublished      "2022-05-23"^^xsd:date ;
+    schema:isPartOf           wd:Q110914241 .
+      
+spotify:e_6cGNcgnpA3nRRsF6us3GQD a schema:PodcastEpisode ;
+    schema:name               "#122 Der Familienmord: die perfekten Whitakers" @de ;
+    schema:description        "Dieser Fall beginnt mit einem Klischee: die perfekte amerikanische Familie. Die Whitakers wohnen in Sugarland, Texas und genießen dort ein sehr gutes Leben. Die Söhne Bart und Kevin gehen bereits aufs College, sind aber für einen besonderen Anlass nach Hause gekommen. Der älteste Sohn Bart hat seinen College-Abschluss geschafft. Doch auch wenn der Abend schön startet, wird er ein schreckliches Ende nehmen. Liebe Exis, macht euch bereit für schreckliche Intrigen, viele Plot-Twists und Mord!Du möchtest mehr über unsere Werbepartner erfahren?  Hier findest du alle Infos & Rabatte: https://linktr.ee/MordaufEx" @de ;
+    schema:duration           "01:08:39" ;
+    schema:datePublished      "2022-05-15"^^xsd:date ;
+    schema:isPartOf           wd:Q110914241 .
+      
+spotify:e_1QFP1P7PG5eI1tKShbu3Aq a schema:PodcastEpisode ;
+    schema:name               "#97 Grausam" @de ;
+    schema:description        "Triggerwarnung: Beide Fälle handeln von Gewalt gegen Kinder. Mordlust, Heimtücke und Habgier - diese Merkmale charakterisieren einen Mord, genauso wie die Grausamkeit: unser Thema dieser Episode. Sie bezeichnet WIE der Mord begangen wurde. Und wie eine grausame Tat aussehen kann, das zeigt euch diese Folge von “Mordlust - Verbrechen und ihre Hintergründe”. Lea ist schwer verliebt und zwar in Ümit. Mit ihm kann sie sich eine gemeinsame Zukunft vorstellen - zusammenziehen, heiraten, Kinder. Und die Beziehung der beiden läuft auch gut, mehrere Monate sind sie zusammen, dann wird Lea ungeplant schwanger. Sie möchte das Kind behalten. Anders als Ümit, er fühlt sich so gar nicht bereit. Lea soll abtreiben. Doch sie weigert sich und Ümit beginnt einen grausamen Plan zu schmieden. Als Janine schwanger wird, ist sie überglücklich. Denn jetzt kann sie es besser machen. Besser als ihre eigenen Eltern, die alkoholsüchtig waren und sie irgendwann an Pflegefamilien abgegeben haben. Als Janines Tochter dann geboren wird, bleibt das Mutterglück allerdings nicht lange erhalten. Die ständige Betreuung der Kleinen überfordert die 21-Jährige. Ihren Ausgleich findet die junge Mutter, indem sie Party machen geht, immer und immer wieder - bis sie im Rausch des Feierns vergisst, dass sie ein kleines Baby Zuhause hat. Jemanden bei lebendigem Leib zu verbrennen oder langsam verhungern zu lassen, kann man zurecht als besonders grausam bezeichnen. So sieht es auch unsere Rechtsprechung. Menschen, die ihre Opfer so quälen, wandern lebenslang ins Gefängnis. Aber wie stark müssen die Qualen denn sein, um als “grausam” zu gelten? Dem gehen wir in dieser Folge nach. **Kapitel**  00:06:55 - Fall Lea00:34:02 - Aha Grausamkeit durch Verbrennung00:41:40 - Fall Mila01:10:15 - Aha Grausamkeit durch Verhungern lassen01:17:32 - Mordmerkmal Grausamkeit **Shownotes** *Fall Lea*Urteil Landgericht BerlinZeit: Im Blutrausch: https://bit.ly/3zmphNl *Aha Grausamkeit durch Verbrennung*BGH Beschluss: 5 StR 390/16The New York Times: Falling Bodies, a 9/11 Image Etched in Pain: https://nyti.ms/3axxTWJSky News: 9/11 anniversary: 'I was burning alive': https://bit.ly/3Q4l2vF *Fall Mila*Urteil Landgericht Arnsberg 2 Ks-412 Js 457/13-13/14openjur.de: Urteil Landgericht Arnsberg 2 Ks-412 Js 457/13-13/14: https://bit.ly/3NXO1PXSpiegel: Mutter nach Hungertod ihres Babys zu lebenslanger Haft verurteilt: https://bit.ly/3tirB3UDie Glocke: Baby verhungert - Mutter lebenslang in Haft: https://bit.ly/3Q4ag8ySoester-Anzeiger: Wie aus Wunschkind Fee eine Belastung wurde: https://bit.ly/3NuLkW4 *Aha Grausamkeit durch Verhungern lassen*hrr-strafrecht.de: 'Fall Dennis' Beschluss vom 13. März 2007: https://bit.ly/3zhfcBbn-tv: Dennis' Eltern weinen über Urteil: https://bit.ly/3xegf22wunderweib: Das passiert in deinem Körper, wenn du verdurstest: https://bit.ly/3GVnC2O *Diskussion*strafrecht-online.org: Auslegung des Mordmerkmals 'grausam': https://bit.ly/3Morhreopenjur.de: LG Bonn, Urteil vom 04.10.2007 - 8 Kls 16/07: https://bit.ly/3ayuY04guelpen.de: Mittäterschafts- und Teilnahmekonstellationen beim Mord: https://bit.ly/3NtHUD1Welt: Der „Schleifer von Hameln“ will einen neuen Prozess: https://bit.ly/3axXWgP **Credit**Produzentinnen/Hosts: Paulina Krasa, Laura WohlersRecherche: Paulina Krasa, Laura Wohlers, Maike FryeSchnitt: Pauline Korb**Partner der Episode**Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/Mordlust" @de ;
+    schema:duration           "01:26:35" ;
+    schema:datePublished      "2022-06-08"^^xsd:date ;
+    schema:isPartOf           wd:Q60697596 .
+      
+spotify:e_0R5h7ADpgyT7QibEpy8HJV a schema:PodcastEpisode ;
+    schema:name               "#96 Mutter, Vater, Tod" @de ;
+    schema:description        "Triggerwarnung: Beim 1. Fall geht es kurzzeitig um einen Suizidversuch.  Egal ob aufgeschlagenes Knie, Liebeskummer oder eine schlechte Note - Eltern sind für ihre Kinder da und lieben sie bedingungslos. Zumindest im besten Fall. Im Schlechtesten will man mit ihnen nichts mehr zu tun haben. In dieser Folge “Mordlust - Verbrechen und ihre Hintergründe” sprechen wir über Kinder, die sich von ihren Eltern lösen wollen - und das egal mit welchen Mitteln.  Die Welt der Meschedes ist klein. Sie besteht nur aus Heiko, Doreen und ihrem gemeinsamen Sohn Johann. Und an ihn haben die kauzigen Eltern hohe Erwartungen. Seine Zukunft ist von den beiden bis ins Kleinste geplant, Raum für Selbstentfaltung bleibt nicht. So studiert Johann auch auf Wunsch seiner Eltern Jura, obwohl ihn Medizin viel mehr interessiert. Doch schon bald wird der Druck, den Vater und Mutter ausüben, immer unerträglicher.  Beruflich haben Elke und Reinhard alles erreicht. Sie sind wohlhabend und wohnen in einer prunkvollen Villa - nur mit dem Nachwuchs will es einfach nicht klappen. Deshalb beschließen sie zu adoptieren und so treten erst Sarah und später Carmen in das Leben des Ehepaares. Die beiden Mädchen sind der ganze Stolz ihrer Eltern und deshalb mangelt es ihnen an nichts - zumindest nichts Materiellem. Doch je älter die beiden Schwestern werden, umso mehr Konflikte entstehen zwischen ihnen und ihren Eltern - bis Sarah und Carmen einen Plan schmieden. Als Kind hinterfragt man die Eltern nur selten. Wenn wir älter werden bröckelt das Bild der unfehlbaren Erwachsenen, denn natürlich begehen selbst Eltern Fehler in der Erziehung. Fehler, die bei manchen Kindern Hass schüren. Welche Folgen das haben kann, darüber sprechen wir in dieser Folge. Interviewpartner in dieser Folge: Psychiater Professor Stefan Orlob**Kapitel**  00:08:09 - Fall Doreen und Heiko00:34:53 - Aha: Tiger Parents00:33:01 - Fall Elke und Reinhard01:04:33 - Aha: Parrizid durch adoptierte Kinder01:13:59 - Ödipus01:15:36 - Motive & Ursachen**Shownotes***Fall Doreen und Heiko*Urteil: Landgericht Potsdam 21 Ks 6/10 487 Js 34306/10Spiegel: 'Ich war für sie der Versager vom Dienst': https://bit.ly/3lCr8W9Stern: Das Leben eine Qual - die grausame Rache des Rene S.: https://bit.ly/3G7siT0*Aha: Tiger Parents*apadivisions.org: What is “tiger” parenting?: https://bit.ly/3x2iplxThe New Yorker: America’s Top Parent: https://bit.ly/38JoeMq *Fall Elke und Reinhard*YouTube: Der Elternmord von Morschen: https://bit.ly/3wCr2nOArchiv Morschen: Der Mordfall Heinzerling 1997: https://bit.ly/3wDViykHelfried Spitra: Die grossen Kriminalfälle: Der St. Pauli-Killer, der Ausbrecherkönig und neun weitere berühmte Verbrechen *Diskussion*University of Roehampton: Parricide in England and Wales (1977-2012): https://bit.ly/3G7Zcmpjaapl.org: Parricide: A Comparative Study of Matricide Versus Patricide: https://bit.ly/3ah1DatCurrent Psychiatry: Characteristics of sons and daughters who kill their parents: https://bit.ly/3wLmwltT. Hubbell,Kathleen M. Heide,Shelly M. Wagers: Adopted children who kill their adoptive parents: An examination through the lens of attachment theory James YouTube: Keynote Speaker - Professor Kathleen Heide: https://bit.ly/3LDg3ysReinhard Haller:  „Das Böse“Netflix: Anatomie eines Skandals: https://bit.ly/3MDWkAh**Credit**Produzentinnen/Hosts: Paulina Krasa, Laura WohlersRecherche: Paulina Krasa, Laura Wohlers, Johann SubklewSchnitt: Pauline Korb**Partner der Episode**Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/Mordlust" @de ;
+    schema:duration           "01:32:57" ;
+    schema:datePublished      "2022-05-25"^^xsd:date ;
+    schema:isPartOf           wd:Q60697596 .
+      
+spotify:e_2d7SQ3Rpl2ogRMDdXg9Oan a schema:PodcastEpisode ;
+    schema:name               "#95 Die Jugend von heute" @de ;
+    schema:description        "Triggerwarnung: Im ersten Fall geht es um sexualisierte Gewalt an Kindern. Sie haben ihr ganzes Leben noch vor sich, doch sind schon auf den falschen Pfad abgebogen. In dieser Folge “Mordlust - Verbrechen und ihre Hintergründe” beschäftigen wir uns mit Kindern, Jugendlichen und Heranwachsenden, die schon früh auf Abwege geraten sind. Nachdem zunächst der zehnjährige Nico verschwunden war und später tot aufgefunden wurde und nun noch ein weiteres Kind vermisst wird, ist man in Leipzig fassungslos. Bisher weiß man nicht, dass sich schon seit einiger Zeit jemand auf Schulhöfen und Spielplätzen rumtreibt, um den Kindern aufzulauern - und, dass die Person deswegen nicht vorher aufgefallen ist, weil sie selbst fast noch ein Kind ist. “Ich bin im Feld an so einer Scheune und mein Freund, der liegt hier. Der hat die Kehle irgendwie aufgeschnitten. Sie müssen ganz schnell kommen”, schreit Tobias in sein Handy. Sein bester Freund Leon liegt vor ihm - tot. Seit über 14 Jahren kennen sich die beiden schon - Tobias ist sowas wie das 5. Mitglied in Leons Familie. Die zwei hatten sogar gemeinsame Träume für die Zukunft, die nun niemals in Erfüllung gehen werden. Handyverbot und Jugendarrest - das Spektrum der “Strafen” für Jugendliche ist groß. In  allererster Linie geht es nämlich um Erziehung und nicht um Bestrafung. Doch wenn Kinder oder Jugendliche jemanden töten, dann reicht das nicht. Was passiert, wenn 14-Jährige schwer kriminell werden und 19-jährige Totschläger noch “zu” jugendlich für das Erwachsenenstrafrecht sind, hört ihr in dieser Episode. Außerdem verraten wir euch, ob die Jugend von heute wirklich so schlimm ist wie alle immer sagen. Interviewpartnerin in dieser Folge: Vizepräsidentin der Bundesrechtsanwaltskammer Ulrike Paul  **Kapitel**  00:03:50 - Fall Nico00:27:47 - Aha: Straffällige Kinder00:33:01 - Fall Leon01:00:51 - Aha: Heranwachsende vor Gericht01:10:42 - Zahlen & Fakten01:15:35 - Jugendstrafrecht01:23:18 - Debatte **Shownotes***Fall Nico*S. Harbort: „Wenn Kinder töten”Urteil: Landgericht Leipzig  3 KS 33 JS 2059/92 + 12 VRs 303 Js 2059/92Spiegel: Je mehr gewalt, desto schöner: https://bit.ly/38dMBlg *Aha: Straffällige Kinder*koerperverletzung.com: Wann liegt verminderte Schuldfähigkeit laut Strafrecht vor?: https://bit.ly/3sopMBWFocus: 13-jähriges Kind gesteht Schlag auf Fabian S.: https://bit.ly/3l26SwADAHAG: Deliktsfähigkeit: Definition und Rechtsgrundlage: https://bit.ly/3FuKXrD *Fall Leon*Urteil: Landgericht Paderborn, 01 KLs 3/16Urteil: Bundesgerichtshof 4 StR 223/15WDR: „Der Junge, der seinen besten Freund erschlug“: https://bit.ly/38bPnYdNW: Urteil im Scheunenmord: https://bit.ly/39Rxq1xNW: Paderborner Scheunenmord wird neu aufgerollt: https://bit.ly/3wf3iVb *Aha: Heranwachsende vor Gericht*ZJJ: https://bit.ly/3MUVgHUN. C: Habermann: Die gutachterliche Praxis im Strafverfahren mit jugendlichen und heranwachsenden Angeklagten: https://bit.ly/38bMvdW *Diskussion*Deutsches Jugendinstitut: Zahlen - Daten - Fakten - Jugendgewalt: https://bit.ly/3958umIDeutschlandfunk Kultur: Das Ende der Unschuld: https://bit.ly/3M2pc4O **Credit**Produzentinnen/Hosts: Paulina Krasa, Laura WohlersRecherche: Paulina Krasa, Laura Wohlers, Johann Subklew, Selina Hare, Denise FriemannSchnitt: Pauline Korb**Partner der Episode**Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/Mordlust" @de ;
+    schema:duration           "01:29:48" ;
+    schema:datePublished      "2022-05-11"^^xsd:date ;
+    schema:isPartOf           wd:Q60697596 .
+      
+spotify:e_6DaR5OBq44WjVHK5KZMuek a schema:PodcastEpisode ;
+    schema:name               "#94 Liebesschwindel" @de ;
+    schema:description        "Triggerwarnung: Beim 2. Fall nachdem Simon und Cecilie getrennt sind, geht es kurzzeitig um Suizidgedanken. Erst geht es um die ganz große Liebe, dann um das ganz große Geld. Love Scammer:innen spielen mit den Gefühlen von Menschen, um sie finanziell auszubeuten. Wie der Liebesschwindel funktioniert, hört ihr in dieser Folge “Mordlust - Verbrechen und ihre Hintergründe”. Mit den großen grünen Augen und der schwarzen Lockenmähne ist Susanne genau Visnjas Typ Frau. Seit die 43-Jährige sie vor ein paar Wochen bei Facebook angeschrieben hat, tauschen die beiden Nachrichten im Sekundentakt aus. Es dauert auch nicht lange da gesteht Susanne ihr ihre Liebe. Visnja ist voller Glück und voller Vorfreude als das erste Treffen endlich bevorsteht. Doch es kommt etwas dazwischen. Susanne braucht Geld. Und dann noch mal. Und nochmal. Nach mehreren Überweisungen wird Visnja skeptisch: Wer ist die Frau, die sich in ihr Herz geschlichen hat, wirklich? Als Cecilie ihr Tinder-Date in der Hotelbar trifft, hat sie schnell das Gefühl, er könnte der Richtige sein. Der junge Diamantenhändler Simon ist charmant, gutaussehend und außerdem sehr spendabel. Es ist der Beginn einer romantischen Liebesgeschichte - bis Simon Cecilie eines Nachts schreibt, dass er Hilfe braucht, weil seine Feinde aus dem Diamanten-Business ihn und seinen Bodyguard angegriffen haben. Damit die in nächster Zeit nicht über seine Kreditkartenabrechnung an seinen Aufenthaltsort kommen können, brauche er Geld - viel Geld. Erst als Ceciles Kreditkarte gesperrt wird, erfährt sie, dass ihr Freund gar nicht Simon heißt. Und so beginnt der Rache-Kampf von nicht nur einer, sondern drei Frauen, die den Mann stellen wollen, der später als der “Tinder Swindler” bekannt wird. Die Freundschaftsanfrage eines Unbekannten bei Social Media oder eine nette Nachricht einer hübschen Frau auf einer Datingplattform - die Verbrechen fangen harmlos an. Doch das ist alles Teil des Plans. Denn Love Scammer:innen wissen genau, wie sie vorgehen müssen, um an das Vertrauen und somit an die Brieftasche ihrer Opfer zu kommen. Dabei arbeiten sie oft mit denselben Taktiken, lassen ihre Opfer mittellos und mit gebrochenem Herzen zurück und verschwinden dann wieder in den Weiten des Internets, wo die Arme der Justiz sie oft nicht greifen können. Interviewpartner:innen in dieser Folge: Leiter des Instituts für Cyberkriminologie Thomas-Gabriel Rüdiger, Gründerin der Plattform „RomanceScambaiter“ Helga Grotheer, Ex-Date vom Tinder-Schwindler Hannah Kerschbaumer @hicallmehannah   **Shownotes** Merchandise: partner-in-crime.tskr.eu  *Fall Visnja* Visnjas Go fund me-Page:  gofundme: Hilf mir meine Scammer hinter Gittern zu bringen: https://bit.ly/38mkqjA *Aha: Scamming-Netzwerk in Westafrika* Das Scammer 'Playbook': https://bit.ly/3EJZlMc *Fall Cecilie* Interviewpartnerin: Instagram: hicallmehannah: https://www.instagram.com/hicallmehannah vg.no: Tinder Swindler: https://bit.ly/3xT8K2t Netflix: Der Tinder Schwindler:  https://bit.ly/3xQ0pg7 Apple Podcasts: Life Uncut: The Tinder Swindler: https://apple.co/3kerH7I *Aha: Love Bombing* PraxisVita: Love Bombing - An diesen Anzeichen erkennen Sie es: https://bit.ly/38qIWAh *Diskussion* Zeit: Betrug im Online-Dating: https://bit.ly/3Kt6oKB NDR: Love Scamming - Betrug mit der Liebe im Internet: https://bit.ly/3rQcqOQ ZDF: Leeres Konto statt großer Liebe: https://bit.ly/3k9Q8Dt Rolling Stone: Inside the Murderabilia Machine: https://bit.ly/3MvG43H *Hilfe* Helga Grotheers Forum 'Romance Scambaiter': https://www.romancescambaiter.de/ Uschi Tschorns Webseite, falls ihr selbst betroffen seid: https://sosliebesbetrug.com   **Credit** Produzentinnen/Hosts: Paulina Krasa, Laura Wohlers Recherche: Paulina Krasa, Laura Wohlers, Johann SubklewSchnitt: Pauline Korb**Partner der Episode**Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/Mordlust" @de ;
+    schema:duration           "02:01:10" ;
+    schema:datePublished      "2022-04-27"^^xsd:date ;
+    schema:isPartOf           wd:Q60697596 .
+      
+spotify:e_5lSwXjuRrNU0Vit4X23jMQ a schema:PodcastEpisode ;
+    schema:name               "#93 Ein lebenswertes Leben" @de ;
+    schema:description        "Triggerwarnung: In der gesamten Folge geht es um Gewalt gegen Menschen mit Behinderung. Eine Behinderung zu haben, heißt für viele Menschen noch immer diskriminiert und ausgeschlossen zu werden - und eine Zeit lang war es sogar ein Todesurteil. In dieser Folge von “Mordlust - Verbrechen und ihre Hintergründe” geht es um den Ableismus in unserer Gesellschaft und seine Folgen.  Das alte Jagdschloss Grafeneck in der Münsinger Alb: Ein Ort, der heute sowie schon zu Beginn des 20. Jahrhunderts als Einrichtung der Behindertenhilfe und als Sozialpsychiatrie dient - doch das war nicht immer so. 1939 spielt sich dort einer der dunkelsten Momente der deutschen Geschichte ab - die Aktion T4, welche für über 10.000 Menschen den Tod bedeutet. Darunter auch Emma Dapp, die in eine Heil- und Pflegeanstalt eingeliefert wurde, weil sie nach dem Tod ihres Mannes noch einmal schwanger wurde. Als die grauen Busse sie nach Grafeneck bringen, weiß sie, was das für sie bedeutet.  Für Tanja ist die Arbeit als Pflegerin ihr Traumberuf. Seit über 30 Jahren schon versucht sie es den Bewohner:innen des Oberlinhauses in Potsdam-Babelsberg so angenehm wie möglich zu machen. Sie hilft, wo sie kann und versucht immer mehr zu geben als andere. Doch in Zeiten von Corona ist das Arbeitspensum extrem gestiegen. Zu wenig Personal und mehr Belastung bringen Tanja an die Grenzen ihrer Kraft - bis sie eines Tages nach ihrer Schicht nach Hause geht und vier Menschen tot sind.  “Er ist so lebensfroh, obwohl er im Rollstuhl sitzt”. Menschen mit Behinderung werden oft nur auf diese reduziert. Obwohl 10 % unserer Bevölkerung eine Beeinträchtigung haben, werden sie noch immer gelabelt, finden in den Medien so gut wie gar nicht statt, werden in “totalen Institutionen” von der Gesellschaft ausgeschlossen und in wichtigen Debatten wie zum Thema Sterbehilfe diskutiert man über ihre Köpfe hinweg. Wie gefährlich das ist, hört ihr in dieser Folge.  Interviewpartner in dieser Folge: Referent der Interessenvertretung Selbstbestimmt Leben in Deutschland e. V. Alexander Ahrens**Kapitel**   00:12:49 - Fall Schloss Grafeneck00:39:53 - Aha: Euthanasie in der NS-Zeit00:45:16 - Sterbehilfe00:50:47 - Fall Thusnelda-von-Saldern-Haus01:19:29 - Aha: Albeismus in der Presse01:28:19 - Gewalt gegen Menschen mit Behinderung01:29:38 - Gewalt in der Pflege01:32:36 - Inklusion **Shownotes***Fall Schloss Grafeneck*ARD: Die Mordfabrik auf der Schwäbischen Alb: https://bit.ly/3O4A3N2ns-euthanasie.de: Johanne Wilhelmine Ehlers:https://bit.ly/3LUKfWzgedenkort-t4.eu: Diakonie Stetten: https://bit.ly/3vaSI19lpb-bw.de: Euthanasie.pdf: https://bit.ly/3xkIX2R *Aha: Euthanasie in der NS-Zeit*bpb: 'Gemeinschaftsfremde' und Kranke: https://bit.ly/37FIjCdPlanet Schule: Spuren der NS-Zeit Euthanesie: https://bit.ly/37EOTZKgedenkort-t4.eu: Was heißt Eugenik?: https://bit.ly/3M38FgJbpb: Was ist Sozialdarwinismus?: https://bit.ly/3LTMZU4 *Fall Thusnelda-von-Saldern-Haus*Urteil: 21 Ks 6/21 Landgericht Potsdam, 486 Js 16517/21 Staatsanwaltschaft PotsdamZeit: Schwerverletzte auf dem Weg der Besserung: https://bit.ly/3jvrwokTAZ: Ableistische Gewalttat: https://bit.ly/37ELDO6Zeit: Dieser Tod ist keine Erlösung: https://bit.ly/3vde9P6Zeit: Pflegerin nach Gewalttat wegen vierfachen Mordes angeklagt: https://bit.ly/3xm6Rv8Spiegel: Prozess gegen mutmaßliche Vierfachmörderin: https://bit.ly/38KI9dySüddeutsche: 'Tiefe Traurigkeit und Angst vor dem Leben': https://bit.ly/3jrOiNN *Aha: Albeismus in der Presse*bpb: Behinderung und Medien – ein Perspektivwechsel: https://bit.ly/3vapL5s*Diskussion*Deutsche Welle: Transkript des Podcasts: Echt behindert! 37: https://bit.ly/3LYz1AaDeutscher Bundestag: Klinische Frailty Skala PDF: https://bit.ly/3LTNrSgTwitter: Tweet Oliver Tolmein: https://bit.ly/3xjI4rkSWR: Gewalt gegen Menschen mit Behinderung: https://bit.ly/3uzu7EDu möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/Mordlust" @de ;
+    schema:duration           "01:32:06" ;
+    schema:datePublished      "2022-04-12"^^xsd:date ;
+    schema:isPartOf           wd:Q60697596 .
+      
+spotify:e_3eOxE5NJB2D7rQSFWvN0PF a schema:PodcastEpisode ;
+    schema:name               "Der Millionen-Guru" @de ;
+    schema:description        "Liebe Freundinnen und Freunde von Baywatch Berlin,Setzt euch mal gemütlich aufs Sofa. Jetzt kommt eine Knaller Meldung von Euren Lieblings-Podcastern: Der Sex-Schamane hat geheiratet! Treue Hörer*innen wissen, das ist nicht der Chat-Name von Klaas, sondern das ist der Kult-Schamane dessen sprichwörtliches „Treiben“ Baywatch Berlin von Beginn an mit großem Interesse verfolgt. Klar, dass diese Neuigkeit ein Teil der bunten Themen Welt dieser Folge sein muss. Ansonsten ist das Motto der „Breeze“ wie Jugendliche die „Baywatch Berlin Summer Breeze“ aus Coolness und Abkürzungsgründen gerne nennen, auch dieses Mal wieder Programm, denn wo „Breeze“ drauf steht, da sind Ferien für die Ohren auch drin.Schmitti gibt Tipps, wie man mit einer einfachen Bootsplane als Teppanyaki Grill und einem Karpfen ein köstliches Sommer Menü braten kann. Die geheime Zutat: Fermentation. Klaas weiß, wie man trotz tropisch-indischer Temperaturen dennoch nicht unnötig verspannt und sich einen etwas anderen Massage Kick holt!Nach dem also Hunger und Körper ihre Aufmerksamkeit bekommen haben, kümmert sich Jakob ums seelische Wohl. Er berichtet von seinem Treffen mit einem echten Guru der ihm die Zukunft voraussagt. Ansonsten gibts wertvolle Trinkgeld Tipps für den Urlaub, eine Rock am Ring Style und Stil-Kritik und gleich zu Beginn einen echten Urlaub zum dabei sein. Mit einer Batterie Pilsner, einer Ratte auf der Schulter und einer vollgepissten Jeans geht es nach Sylt.Ahoi! Und viel Spaß mit der „Baywatch Berlin - Summer Breeze“ Folge: 'Der Millionen-Guru'Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/BaywatchBerlin" @de ;
+    schema:duration           "01:08:07" ;
+    schema:datePublished      "2022-06-09"^^xsd:date ;
+    schema:isPartOf           wd:Q85850769 .
+      
+spotify:e_6ZsxIefZT4caRPVw1jIBvL a schema:PodcastEpisode ;
+    schema:name               "Klöterpunk & Eldenfürst" @de ;
+    schema:description        "Was Jahr für Jahr beim Karneval funktioniert, wird auch bei Baywatch Berlin erfolgreich sein: Gute Laune per Beschluss. Pünktlich zu Beginn der diesjährigen „Summer Breeze“-Saison ist das Leben wieder ein Leichtes, die Gedanken sommerlich und die Laune auf Rekordhoch! Machen Sie sich frei, schlüpfen Sie gedanklich in ihre Puna-Badehose und genießen Sie diesen Podcast, der - wie Kondenswasser am Bierglas - an ihrer Seele runterperlt. Um Sie, werte Hörerinnen und Hörer, nicht mit den Schwierigkeiten des Alltags zu belasten, haben Heufer-Umlauf, Schmitt und Lundt wieder einmal einen Blumenstrauß aus den egalsten und profansten Themen zusammengesteckt: Schmitt hat sein Ritterspiel zu Ende gebracht, nennt sich jetzt „Eldenfürst“ und fordert dafür Ehre und Anerkennung. Doch das haben Klaas und Lundt leider, leider nicht im Angebot. Dafür jetzt neu: Lundt ist auf einer Autofahrt nach München kurz in seine Pubertät abgebogen und hat festgestellt, dass in ihm ein kleiner Punker schlummert. Im Jahr des Herrn 2022 (!) hat der junggebliebene Mittdreißiger festgestellt, dass „Die Ärzte“ ja ganz fetzige Musik für aufmüpfige Jugendliche in ihrem Portfolio haben. What´s next? Teenage Riot im KaDeWe? Wird man ihn bald nur noch „Schlemmi“ oder „Geldi“ nennen? Wird Lundt zum stadtbekannten Austern-Punk? Wir bleiben dran.Aber auch Klaas hat Probleme mit der Jugend: seine ist nämlich definitiv vorbei. Gerade noch war die „Jackass“-Truppe um Johnny Knoxville der Quell all seines Tun und Handelns - schon sitzt er da, in seinem Seniorensessel - und kann über das bunte Treiben der amerikanischen Radautruppe nur noch verständnislos den Kopf schütteln. Aber so ist das wohl im Leben: Die Jugend verblasst, die Welt ist im Wandel, aus Kaffee wird Punk - nur die Baywatch Berlin Summer Breeze, die wird ewig blühen.Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/BaywatchBerlin" @de ;
+    schema:duration           "01:11:48" ;
+    schema:datePublished      "2022-06-02"^^xsd:date ;
+    schema:isPartOf           wd:Q85850769 .
+      
+spotify:e_2SFtC2JtZBWhwWPhhB0i1f a schema:PodcastEpisode ;
+    schema:name               "Toni Kroos hasst diese Folge" @de ;
+    schema:description        "„Nächste Folge #baywatchberlin höre ich nicht. Richtig eklig, wenn alle so gut drauf sind.“Freizeitkicker Toni Kroos ahnte was kommen würde, als er die Ergebnisse der Bundesliga-Relegation gefaxt bekam: Lundt, Schmitt und Klaas erfreuen sich bester Laune, weil „Lundt seine Hertha“ den Abstieg verhindern konnte und so für den Podcast-Fürst von Metternich auch in der nächsten Saison die Lachsschnittchen in der VIP-Arena gesichert sind. Bodenständiger, aber ebenfalls in selten guter Verfassung: Schmitt, dessen „Rote Geissböck vom Betzeberch“ (sic!) den Aufstieg in Liga 2 geschafft haben. Da Schmitt mit so viel Glück und Freude nicht umzugehen weiß, verfällt er wie seine Echsen erstmal in Schockstarre, verkrampft am ganzen Körper und nennt diesen Zustand im Anschluss den schönsten Tag seines Lebens. Klaas hat zwar keinen Aufstieg zu vermelden (seine neueste Gaga-Erzählung über seinen „Lieblingsverein“ lassen wir mal ins Abseits laufen) aber empfindet starke Emotionen, wenn er die neuesten Knallerstories aus dem Tierreich verkünden darf. Diesmal versucht er Fischotter öffentlich zu diffamieren und zeichnet das Bild einer pelzig-putzigen Erpresserbande, die skrupellos durch die Natur marodieren. Ab ins Sommerhaus mit die Viechers! Überhaupt ist die Spannbreite an Themen in dieser Woche wieder „überragend“ (O-Ton eines jeden interviewten Fussballers): Von den Kegelbrüdern im Malleknast, über blüffige Astrophysik bis hin zu Schnitzel-Framing ist wieder alles dabei, was in unser aller Alltag garantiert keine Rolle spielt. Ach doch, halt! Es gibt sie noch, die lebensnahen Geschichten und Probleme: Lundts Heizungsanlage klötert und braucht dringend die Hilfe eines Entklöterungsdienstes (nähere Informationen dazu in der Episode) und die Testosteronmännchen an der Ampel oder in der Warteschlange der Clubs bekommen endlich, endlich die rote Karte gezeigt. Gut Kick für die Pyroshow unter den Podcasts! Anpfiff für Baywatch Berlin!Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/BaywatchBerlin" @de ;
+    schema:duration           "01:07:51" ;
+    schema:datePublished      "2022-05-26"^^xsd:date ;
+    schema:isPartOf           wd:Q85850769 .
+      
+spotify:e_5yO5JzEhrL7Vomh0onT63h a schema:PodcastEpisode ;
+    schema:name               "Die Twitter-Petzen vom Spuckesee" @de ;
+    schema:description        "Wer denkt, dass Elon Musk aktuell die größte kulturelle Bedrohung von Twitter ist, der weiß wohl nicht, dass sich Thomas‘ Vater soeben einen Account angelegt hat. Aha! Oho! Einer von der ganz schnellen Truppe, wird der ein- oder andere jetzt denken: Aber was, wenn alles noch viel schlimmer ist und er seit Jahren heimlich mitliest, wenn Thommy im scheinbaren Schutz der Anonymität beispielsweise von Zigaretten schwärmt oder andere im Hause Schmitt verpönte Gewohnheiten abfeiert. Das gibt wohl Ärger. SCHLIMMEN Ärger - dabei ist noch nicht mal Oktober. Aber so richtig viel kann ihm wahrscheinlich eh nicht passieren, er möchte sich nämlich, wie er in dieser Folge verrät, in den „dunklen Künsten“ ausbilden lassen um dann als Party-Hexer eine große Nummer in Friedrichshainer WG-Küchen zu werden. NAJA WENN ER MEINT, NICHT WAHR?Und Jakob, dem drückt aktuell der Fussballschuh. Wenn Sie diesen Text hier lesen, wissen Sie ja schon wie Lundts Hertha sich geschlagen hat im Unterfangen Klassenerhalt. Er weiß in diesem zeitgeschichtlichen Dokument namens 'Baywatch Berlin' noch gar nix. Er greift sogar zu ungewöhnlichen Mitteln und zwingt Fussballclown Heufer-Umlauf mit emotional vorgehaltener Waffe eine Motivationsrede an den Haupstadtclub zu halten. Dieser macht das dann auch mit einer Verve, die selbst ein Hanns-Martin Schleyer in den Schatten stellt. Aber seien wir ehrlich: Selbst ohne Zwang kommt aus Moderationsroboter Klaas seit einiger Zeit nur noch gefühlloses immer gleiches Gebrabbel. Vielleicht hätte er sich die betäubende Benzocain-Salbe, die sich Tierfreund Jakob zum Anfassen der Kröten besorgt hatte, nicht direkt auf die Seele schmieren sollen. Aber naja. HÄTTE HÄTTE.*Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/BaywatchBerlin" @de ;
+    schema:duration           "01:01:15" ;
+    schema:datePublished      "2022-05-19"^^xsd:date ;
+    schema:isPartOf           wd:Q85850769 .
+      
+spotify:e_2nNxa4yGkSrDWqYnwF6G0C a schema:PodcastEpisode ;
+    schema:name               "Das geklebte Statement" @de ;
+    schema:description        "“I got my peaches out in Georgia (oh, yeah, shit)I get my weed from California (that's that shit)I took my chick up to the North, yeah (badass bitch)I get my light right from the source, yeah (yeah, that's it)”Wenn ihr diese Zeilen aktuell an einer roten Ampel aus einem Auto dröhnen hört, befindet ihr euch in unmittelbarer Nähe zu einem BESTENS gelauntem Klaas Heufer-Umlauf. Dieser befindet sich in seiner kulturellen Abwärtsspirale gerade in seiner Justin Bieber Phase und hat diesen Song ca. 500 Jahre nach Platten VÖ nun brandneu für sich entdeckt. Vorbei die Zeit, in der er übereifrig die Visions, den Musikexpress & die Spex auswendig gelernt hat. Jeder lebt seine geistige Unabhängigkeit anders aus. Heufer-Umlauf wurde zum Belieber. 🙏Naja, jeder macht sich ja anders gute Laune. Jakob & Schmitti flüchten sich stets in die sichere Comfort Zone ihrer eigenen Erinnerung. Während Jakob gerne wieder in einer Zeit leben würde, in der man einfach alles klebt was irgendwie kaputt gegangen ist (Obstschale, Toaster, Manuel Cortèz), vermisst Schmitt das Geräusch dass es macht wenn einer mit einem superschnellen Flugzeug die Schallmauer durchbricht: “Als ich noch klein war, hat's dauernd geknallt.”Wer will schon nach Bullerbü wenn man auch direkt neben der Militärbasis Ramstein groß werden kann. Ach ja: Pfeife ist heute morgen mit dem Fahrrad hingeknallt. Dem verbogenen Fahrrad nach zu urteilen hat’s da wohl ordentlich gescheppert. Aber falls Sie jetzt dieselbe Frage im Kopf haben wie wir, als wir diese Nachricht bekamen: Jawoll, den Ohren geht es gut. Die neue Folge Baywatch Berlin heißt: 'Das geklebte Statement' & sogar Joko macht auch 2-mal mit. Juchu. Bis gleich.Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/BaywatchBerlin" @de ;
+    schema:duration           "01:02:52" ;
+    schema:datePublished      "2022-05-12"^^xsd:date ;
+    schema:isPartOf           wd:Q85850769 .
+      
+spotify:e_7g1o231ITDRkgeuMAYJRbS a schema:PodcastEpisode ;
+    schema:name               "Lektion 6: Mach dein Ding mit Graffiti-Legende Greb" @de ;
+    schema:description        "Wenn man dreht, lebt man in einer anderen Welt  - kein Wunder also, dass das Ende von Kidas Serien-Dreh emotionaler wurde als erwartet. Wie Frederick der Spagat zwischen Filmset und Kita gelingt? Außerdem das erste Mal mit dabei der King der Woche und Graffiti-Legende Greb aus Kreuzberg - der aus dem Malkasten plaudert und mit den beiden krasse Aktionen der letzten 20 Jahre teilt. Warum es dann am Ende noch um Waldorfschulen und Archäologen geht, hört ihr in dieser Folge.Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/reichundschoen" @de ;
+    schema:duration           "00:46:59" ;
+    schema:datePublished      "2022-06-14"^^xsd:date ;
+    schema:isPartOf           spotify:s_2TgGzjsd5o9280yF2qDaog .
+      
+spotify:e_3XzCVzoyfAZh1HiQ529qhq a schema:PodcastEpisode ;
+    schema:name               "Lektion 5: Respekt geben, Respekt nehmen und morgen geht das Leben weiter" @de ;
+    schema:description        "Nach dem langen Finalwochenende sind Kida und Frederick noch ganz im Fussballfieber: Was unterscheidet Zidane von Ancelotti? Wie geht Kloppo mit der neuerlichen Niederlage um? Und was sagen die beiden Filmstars eigentlich zum missglückten Kroos Interview? Bei so viel Emotionen wirkt die Frage von Kida an seinen besten Freund diese Woche da schon fast besinnlich: Was würde ein Engel in Deinem Ohr zu Dir sagen? Die Antwort von Frederick ist so einfach wie wahr. Genau wie die ungeschönten Liebes- und Hass-Kommentare der Zuhörer*innen, die sich Kida und Frederick diese Woche mal genauer ansehen wollten. Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/reichundschoen" @de ;
+    schema:duration           "00:31:08" ;
+    schema:datePublished      "2022-05-31"^^xsd:date ;
+    schema:isPartOf           spotify:s_2TgGzjsd5o9280yF2qDaog .
+      
+spotify:e_6R3nUtvl7lP5BG0zfRcJQC a schema:PodcastEpisode ;
+    schema:name               "Reich + Schön #4 Masterclass mit Cossu, Xidir und Momo Ramadan" @de ;
+    schema:description        "Frederick ist in Cannes, eine gute Gelegenheit für Kida, die ersten Gäste im Studio zu empfangen. Frei nach dem Motto: Kumpels, Kollegen und große Talente treffen der Schwarzwälder Influencer Cossu und Rapper Xidir zusammen und erzählen von ihrem Weg nach oben, was sie motiviert und wer sie inspiriert. Wieso Frederick schnell wusste, Cossu ist einer von ihnen, was Xidir und Kida teilen und was Special Guest Momo Ramadan werden möchte, wenn er mal groß ist? Diese Fragen und vor allem die Joker Frage: Unter welchen Umständen könnte es eine vierte Staffel 4 Blocks geben, werden in dieser Masterclass beantwortet. Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/reichundschoen" @de ;
+    schema:duration           "00:38:52" ;
+    schema:datePublished      "2022-05-24"^^xsd:date ;
+    schema:isPartOf           spotify:s_2TgGzjsd5o9280yF2qDaog .
+      
+spotify:e_6kfXS2SsfdiOwTZb2qDAdd a schema:PodcastEpisode ;
+    schema:name               "Lektion 3: Dein Privatstrand, dein Jetski, dein Boot" @de ;
+    schema:description        "Vom Klappfahrrad zum Privatjet und vom Asylbewerberheim in die Suite, in der dritten Folge von Reich + Schön geht es um die Anfänge von Kida und Frederick. Von der ersten SMS bis zu einem außergewöhnlichen Ausflug nach Sardinien - die beiden sind ein Team, reich an Erfahrungen.Wenn die beiden sich privat treffen, reden sie normalerweise nicht viel über Film, aber diesmal teilen sie prägende Erfahrungen vom Set: Warum Frederick fast mit dem Schauspielen aufgehört hätte und wieso Kida lange Angst vorm Catering hatte? Das alles und noch viel mehr in dieser Ausgabe von Reich + Schön.Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/reichundschoen" @de ;
+    schema:duration           "00:44:09" ;
+    schema:datePublished      "2022-05-18"^^xsd:date ;
+    schema:isPartOf           spotify:s_2TgGzjsd5o9280yF2qDaog .
+      
+spotify:e_3gdti4ZAe4AsDtb8LdMHBX a schema:PodcastEpisode ;
+    schema:name               "Interlude: Wo zum Teufel steckt Frederick Lau?" @de ;
+    schema:description        "Reich + Schön und auch rar. Eigentlich ist bei Bummens alles angerichtet für eine neue Lektion in Sachen “Reich + Schön”. Doch von einem der beiden Stars fehlt jede Spur. Wird es Kida Ramadan gelingen, seinen kongenialen Partner rechtzeitig aufzuspüren?Du möchtest mehr über unsere Werbepartner erfahren? Hier findest du alle Infos & Rabatte: https://linktr.ee/reichundschoen" @de ;
+    schema:duration           "00:03:50" ;
+    schema:datePublished      "2022-05-17"^^xsd:date ;
+    schema:isPartOf           spotify:s_2TgGzjsd5o9280yF2qDaog .
+      
