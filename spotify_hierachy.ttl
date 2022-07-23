@@ -1,0 +1,153 @@
+@prefix schema:     <https://schema.org/> .
+@prefix rdf: 		<http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: 		<http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd:		<https://prefix.cc/xsd> .
+@prefix owl: 		<http://www.w3.org/2002/07/owl#> .
+@prefix spotify:	<https://bmake.th-brandenburg.de/spotify/> .
+
+### Definition of Re-Used Classes ###
+schema:CreativeWork		a				owl:Class ;
+						rdfs:label		"Creative Work"@en ;
+						rdfs:comment	"Main class for the domain Spotify: consisting of audio objects, complete podcast series as well as episodes with their associated thumbnails, topic and host."@en ;						
+						rdfs:isDefinedBy <https://schema.org/> .
+								
+schema:PodcastSeries	a				owl:Class ;
+						rdfs:label		"Podcast Series"@en ;
+						rdfs:subClassOf	schema:CreativeWork ;
+						rdfs:comment	"An audio format depicted as a playlist that is linked to a web feed (RSS-feed) and can be subscribed to through it."@en ;
+						rdfs:isDefinedBy <https://schema.org/> .
+						
+schema:PodcastEpisode	a				owl:Class ;
+						rdfs:label		"Podcast Episode"@en ;
+						rdfs:subClassOf	schema:CreativeWork ;
+						rdfs:comment	"A single episode of a podcast series."@en ;
+						rdfs:isDefinedBy <https://schema.org/> .
+						
+schema:Person			a				owl:Class ;
+						rdfs:label		"Person"@en ;
+						rdfs:comment	"Mainly used for identifying hosts creating podcasts or persons recording/voicing podcast."@en ;
+						rdfs:isDefinedBy <https://schema.org/> .
+						
+schema:Organization		a				owl:Class ;
+						rdfs:label		"Organization"@en ;
+						rdfs:comment	"An organization that serves as an audio streaming service or as a podcast creator."@en ;
+						rdfs:isDefinedBy <https://schema.org/> .
+						
+### Object properties ###
+
+schema:isPartOf a owl:ObjectProperty ;
+			rdfs:label "is part of"@en ;
+			rdfs:comment "Is used to relate a specific creative work to an encompassing collection or structure, mainly a podcast episode to a series."@en ;
+			rdfs:domain schema:CreativeWork ;
+			rdfs:range schema:CreativeWork ;
+			rdfs:isDefinedBy <https://schema.org/> .	
+			
+schema:creator a owl:ObjectProperty ;
+			rdfs:label "creator"@en ;
+			rdfs:comment "Is used to relate a podcast to a person or organization that create podcasts."@en ;
+			rdfs:domain schema:CreativeWork ;
+			rdfs:isDefinedBy <https://schema.org/> .
+			
+schema:maintainer a owl:ObjectProperty ; 
+			rdfs:label "maintainer"@en ;
+			rdfs:comment "Is used to describe an organization that publishes podcasts on a platform."@en ;
+			rdfs:domain schema:CreativeWork ;
+			rdfs:range schema:Organization ;
+			rdfs:isDefinedBy <https://schema.org/> .
+			
+schema:contributor a owl:ObjectProperty ; 
+			rdfs:label "contributor"@en ;
+			rdfs:comment "A person that is voicing or takes part as a guest in a podcast."@en ;
+			rdfs:domain schema:CreativeWork ;
+			rdfs:range schema:Person ;
+			rdfs:isDefinedBy <https://schema.org/> .
+
+### Datatype Properties ###
+
+schema:name a owl:DatatypeProperty ;
+			rdfs:label "name"@en ;
+			rdfs:comment "General datatype property, potentially usable for names of all resources."@en ;
+			rdfs:range schema:Text ;
+			rdfs:isDefinedBy <https://schema.org/> .
+
+schema:alternateName a owl:DatatypeProperty ;
+			rdfs:label "alternate name"@en ;
+			rdfs:comment "Here used for the aliases of the podcast host."@en ;
+			rdfs:range schema:Text ;
+			rdfs:isDefinedBy <https://schema.org/> .
+
+schema:description a owl:DatatypeProperty ;
+			rdfs:label "description"@en ;
+			rdfs:comment "General datatype property, potentially usable for description of all resources."@en ;
+			rdfs:range schema:Text ;
+			rdfs:isDefinedBy <https://schema.org/> .
+						
+schema:duration a owl:DatatypeProperty ;
+			rdfs:label "duration"@en ;
+			rdfs:comment "Duration of an audio object in the format PTmmMssS."@en ;
+			rdfs:domain schema:PodcastEpisode ;
+			rdfs:range schema:Duration ;
+			rdfs:isDefinedBy <https://schema.org/> .			
+			
+schema:datePublished a owl:DatatypeProperty ;
+			rdfs:label "publish date"@en ;
+			rdfs:comment "Publishing date of a audio object in the format YYYY-MM-DD."@en ;
+			rdfs:domain schema:PodcastEpisode ;
+			rdfs:range schema:Date ;
+			rdfs:isDefinedBy <https://schema.org/> .	
+
+schema:inLanguage a owl:DatatypeProperty ;
+			rdfs:label "in language"@en ;
+			rdfs:comment "The language of a podcast."@en ;
+			rdfs:domain spotify:Podcast ;
+			rdfs:range schema:Language ;
+			rdfs:isDefinedBy <https://schema.org/> .
+					
+schema:webfeed a owl:DatatypeProperty ;
+			rdfs:label "webfeed"@en ;
+			rdfs:comment "The URL for a feed, associated with a podcast series, usually as an RSS-feed."@en ;
+			rdfs:range schema:URL ;
+			rdfs:isDefinedBy <https://schema.org/> .
+			
+schema:genre a owl:DatatypeProperty ;
+			rdfs:label "genre"@en ;
+			rdfs:comment "Genre of the podcast."@en ;
+			rdfs:domain spotify:PodcastSeries ;
+			rdfs:range schema:Text ;
+			rdfs:isDefinedBy <https://schema.org/> .
+					
+schema:episodeNumber a owl:DatatypeProperty ;
+			rdfs:label "episode number"@en ;
+			rdfs:comment "Position of the podcast episode within an ordered group of episodes."@en ;
+			rdfs:range schema:Integer ;
+			rdfs:domain spotify:Episode ;
+			rdfs:isDefinedBy <https://schema.org/> .
+			
+schema:image a owl:DatatypeProperty ;
+			rdfs:label "image"@en ;
+			rdfs:comment "Here used for the thumbnails of the podcasts episode or podcast series."@en ;
+			rdfs:range schema:URL ;
+			rdfs:domain spotify:Podcast ;
+			rdfs:isDefinedBy <https://schema.org/> .
+			
+schema:isFamilyFriendly a owl:DatatypeProperty ;
+			rdfs:label "is Family Friendly"@en ;
+			rdfs:comment "Shows whether if a podcast is eplicit or not explicit."@en ;
+			rdfs:range schema:Boolean ;
+			rdfs:domain spotify:Podcast ;
+			rdfs:isDefinedBy <https://schema.org/> .
+			
+spotify:market a owl:DatatypeProperty ;
+			rdfs:label "market"@en ;
+			rdfs:comment "Describes all the markets where the podcast is available."@en ;
+			rdfs:range schema:ISO_3166 ; #Datentyp nicht bei Schema vorhanden [Text, Place, Geoshape]
+			rdfs:domain spotify:Podcast ;
+			rdfs:isDefinedBy <https://schema.org/> .
+
+schema:url a owl:DatatypeProperty ;
+			rdfs:label "url"@en ;
+			rdfs:comment "Can be used to describe a person in more detail,e.g. known as a celebrety."@en ;
+			rdfs:range schema:URL ;
+			rdfs:domain spotify:Person ;
+			rdfs:isDefinedBy <https://schema.org/> .
+
